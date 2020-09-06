@@ -2,3 +2,5 @@ Base path: 'C:/Program Files/2019.3.8f1/Editor/Data', plugins path 'C:/Program F
 Cmd: initializeCompiler
 Cmd: compileComputeKernel
   api=4 insize=1945 outsize=984 ok=1
+
+Quitting shader compiler process
