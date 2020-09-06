@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":false,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":false,"showSkybox":false,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":0.0,"y":1.499999761581421,"z":-0.2499999701976776},"rotation":{"x":-0.20203809440135957,"y":0.07278793305158615,"z":-0.015057364478707314,"w":-0.9765588641166687},"size":8.303773880004883,"orthographic":false}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":false,"audioPlay":false,"sceneViewState":{"showFog":false,"showMaterialUpdate":false,"showSkybox":false,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":false,"pivot":{"x":0.0,"y":1.499999761581421,"z":-0.2499999701976776},"rotation":{"x":0.5006836652755737,"y":-0.43113866448402407,"z":0.317332923412323,"w":0.68025141954422},"size":8.291146278381348,"orthographic":true}
+>>>>>>> minyoung
