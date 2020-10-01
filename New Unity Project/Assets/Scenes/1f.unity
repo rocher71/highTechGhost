@@ -2491,9 +2491,9 @@ Transform:
   - {fileID: 1761481576}
   - {fileID: 4877511528931392}
   - {fileID: 1134738903}
+  - {fileID: 411944899}
   - {fileID: 1087350647}
   - {fileID: 1544638549}
-  - {fileID: 411944899}
   - {fileID: 1292849822}
   - {fileID: 576812354}
   - {fileID: 1442033288}
@@ -6677,7 +6677,7 @@ Transform:
   - {fileID: 252204840}
   - {fileID: 74576978}
   m_Father: {fileID: 111998438}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &413730964 stripped
 GameObject:
@@ -11575,7 +11575,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -11615,7 +11615,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 1
+  m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
