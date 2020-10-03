@@ -63,6 +63,8 @@
      <Compile Include="Assets\Script\Dialog\DialogDataConfirm.cs" />
      <Compile Include="Assets\Script\Dialog\DialogManager.cs" />
      <Compile Include="Assets\Script\GameController.cs" />
+     <Compile Include="Assets\Script\check.cs" />
+     <Compile Include="Assets\Script\click.cs" />
      <Compile Include="Assets\Script\playerctr.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
