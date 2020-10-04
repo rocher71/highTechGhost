@@ -34,6 +34,7 @@ public class GameController_1f : MonoBehaviour
     {
 
         yield return new WaitForSeconds(1f);
+        talk();
     }
 
     // Update is called once per frame
