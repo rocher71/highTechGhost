@@ -11013,10 +11013,10 @@ GameObject:
   - component: {fileID: 918027956}
   - component: {fileID: 918027955}
   - component: {fileID: 918027954}
-  - component: {fileID: 918027953}
   - component: {fileID: 918027952}
   - component: {fileID: 918027958}
   - component: {fileID: 918027959}
+  - component: {fileID: 918027953}
   m_Layer: 8
   m_Name: player
   m_TagString: Player
@@ -11049,10 +11049,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 918027951}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd0b61af231bdfc41bb395036ecbc461, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c1949a32214c4c4d9cf604f83a79d39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 200
+  walkSpeed: 500
   lookSensitivity: 1
   cameraRotationLimit: 45
   theCamera: {fileID: 963194227}
