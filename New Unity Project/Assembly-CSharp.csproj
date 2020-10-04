@@ -55,10 +55,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\1f_Scripts\DoorScript.cs" />
+     <Compile Include="Assets\1f_Scripts\FirstPlayerController.cs" />
+     <Compile Include="Assets\1f_Scripts\GameController_1f.cs" />
+     <Compile Include="Assets\1f_Scripts\InteractScript.cs" />
      <Compile Include="Assets\AllSkyFree\AllSkyFree_Menu.cs" />
      <Compile Include="Assets\Scenes\scripts\playerctr.cs" />
+     <Compile Include="Assets\Script\Dialog\DialogController.cs" />
+     <Compile Include="Assets\Script\Dialog\DialogControllerAlert.cs" />
+     <Compile Include="Assets\Script\Dialog\DialogControllerConfirm.cs" />
+     <Compile Include="Assets\Script\Dialog\DialogData.cs" />
+     <Compile Include="Assets\Script\Dialog\DialogDataAlert.cs" />
+     <Compile Include="Assets\Script\Dialog\DialogDataConfirm.cs" />
+     <Compile Include="Assets\Script\Dialog\DialogManager.cs" />
+     <Compile Include="Assets\Script\GameController.cs" />
+     <Compile Include="Assets\Script\check.cs" />
+     <Compile Include="Assets\Script\check1f.cs" />
+     <Compile Include="Assets\Script\check3f.cs" />
+     <Compile Include="Assets\Script\click.cs" />
+     <Compile Include="Assets\jump.cs" />
      <None Include="Assets\AllSkyFree\AllSkyFree_Readme.txt" />
      <None Include="Assets\HQ_Modular_Interior_School\readme.txt" />
+     <None Include="Assets\My3DText.shader" />
+     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/user/OneDrive - inha.edu/hitechghost/New Unity Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
