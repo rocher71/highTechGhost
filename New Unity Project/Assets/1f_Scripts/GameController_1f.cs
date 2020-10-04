@@ -8,7 +8,7 @@ public class GameController_1f : MonoBehaviour
 
     void talk()
     {
-        DialogDataAlert alert = new DialogDataAlert("대학원생 김논문(26)", "대학원...오지마........\n살려줘.....", delegate () {
+        DialogDataAlert alert = new DialogDataAlert("안뇽, 인덕", "신입생 안녕!! 어서와!!", delegate () {
             Debug.Log("OK Pressed!");
 
             /*

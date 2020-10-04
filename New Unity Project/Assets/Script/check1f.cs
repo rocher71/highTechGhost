@@ -15,7 +15,7 @@ public class check1f : MonoBehaviour
     {
         Debug.Log("clicked");
         hidePanel();
-        DialogDataAlert alert = new DialogDataAlert("대학원생 김논문(26)", "대학원...오지마........\n살려줘.....", delegate () {
+        DialogDataAlert alert = new DialogDataAlert("비룡이와 나룡이", "신입생 안녕!! 어서와!!", delegate () {
             Debug.Log("OK Pressed!");
 
             /*
