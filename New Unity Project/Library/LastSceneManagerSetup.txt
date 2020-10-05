@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/15f_dialog.unity
+- path: Assets/Scenes/10f_dialog.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
