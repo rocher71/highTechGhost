@@ -350,9 +350,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0a1c2217bbbd4257834765c9073da40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  window: {fileID: 824532470}
-  LabelTitle: {fileID: 1210433009}
-  LabelMessage: {fileID: 926948586}
+  window: {fileID: 0}
+  LabelTitle: {fileID: 0}
+  LabelMessage: {fileID: 0}
 --- !u!1001 &24255498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2535,7 +2535,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 991fd81e58044b148837b27a4a4a7953, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 824532469}
   t: {fileID: 702672966}
   cor: {fileID: 395475763}
   wrong: {fileID: 251354772}

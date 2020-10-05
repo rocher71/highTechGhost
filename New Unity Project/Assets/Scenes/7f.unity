@@ -17359,7 +17359,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1041863412}
-  m_RootOrder: 32
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: -208.83, y: 448.598, z: 177.871}
 --- !u!108 &915773487
 Light:
@@ -18291,7 +18291,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 26.991467
+  field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -19371,12 +19371,12 @@ Transform:
   - {fileID: 389976267}
   - {fileID: 684793522}
   - {fileID: 370597746}
-  - {fileID: 442048698}
+  - {fileID: 915773486}
   - {fileID: 297901744}
   - {fileID: 1881599071}
   - {fileID: 1718694364}
+  - {fileID: 442048698}
   - {fileID: 922989972}
-  - {fileID: 702961592}
   - {fileID: 238165982}
   - {fileID: 857182722}
   - {fileID: 1615290017}
@@ -19384,7 +19384,7 @@ Transform:
   - {fileID: 2029696862}
   - {fileID: 582632776}
   - {fileID: 1646531275}
-  - {fileID: 915773486}
+  - {fileID: 702961592}
   - {fileID: 62070955}
   - {fileID: 1977533908}
   - {fileID: 1054235897}
@@ -19441,14 +19441,14 @@ Transform:
   - {fileID: 958409138}
   - {fileID: 1936241946}
   - {fileID: 410584166}
-  - {fileID: 163365423}
   - {fileID: 1478613057}
   - {fileID: 1610329060}
   - {fileID: 372844786}
   - {fileID: 1200260941}
+  - {fileID: 999468975}
   - {fileID: 1108528795}
   - {fileID: 1080064155}
-  - {fileID: 999468975}
+  - {fileID: 163365423}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}

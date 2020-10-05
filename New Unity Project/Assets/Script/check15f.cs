@@ -6,19 +6,20 @@ using UnityEngine.UI;
 public class check15f : MonoBehaviour
 {
 
-    public GameObject Panel;
+    //public GameObject Panel;
     public Text t;
     public Text cor;
     public Text wrong;
+    /*
     public void hidePanel()
     {
         Panel.gameObject.SetActive(true);
     }
-
+    */
     void OnMouseDown()
     {
         Debug.Log("clicked");
-        hidePanel();
+       // hidePanel();
         t.GetComponent<Text>().text = "우왕!";
         DialogDataAlert alert = new DialogDataAlert("15층", "여기가 하이테크 마지막 층이야!", delegate () {
             Debug.Log("OK Pressed!");

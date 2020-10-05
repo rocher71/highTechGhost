@@ -12100,7 +12100,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 918027951}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd0b61af231bdfc41bb395036ecbc461, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c1949a32214c4c4d9cf604f83a79d39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   walkSpeed: 200
