@@ -5,16 +5,17 @@ using UnityEngine;
 public class check : MonoBehaviour
 {
 
-    public GameObject Panel;
+    //public GameObject Panel;
+    /*
     public void hidePanel()
     {
         Panel.gameObject.SetActive(true);
-    }
+    }*/
 
     void OnMouseDown()
     {
         Debug.Log("clicked");
-        hidePanel();
+       // hidePanel();
         DialogDataAlert alert = new DialogDataAlert("대학원생 김논문(26)", "대학원...오지마........\n살려줘.....", delegate () {
             Debug.Log("OK Pressed!");
 
