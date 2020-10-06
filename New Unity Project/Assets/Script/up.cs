@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class up : MonoBehaviour
 {
@@ -27,6 +29,7 @@ public class up : MonoBehaviour
                  t.GetComponent<Text>().text = "고마워";
                  DialogDataAlert yes = new DialogDataAlert("안뇽, 인덕", "그럼 보내줄게!", delegate () {
                      Debug.Log("OK Pressed!");
+                     SceneManager.LoadScene("3f_dialog");
                  });
                  DialogManager.Instance.Push(yes);
 
