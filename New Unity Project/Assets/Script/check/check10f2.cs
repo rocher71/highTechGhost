@@ -6,33 +6,30 @@ using UnityEngine.UI;
 public class check10f2 : MonoBehaviour
 {
 
-    public GameObject Panel;
+    public GameObject player;
     public Text t;
-    public void hidePanel()
-    {
-        Panel.gameObject.SetActive(true);
-    }
+    
 
     void OnMouseDown()
     {
         Debug.Log("clicked");
-        hidePanel();
-
-
-        t.GetComponent<Text>().text = "next";
+       
+        player.GetComponent<playerctr>().enabled = false;
+        t.GetComponent<Text>().text = "그러네요!";
         DialogDataAlert gwasa1 = new DialogDataAlert("10층 - 과사", "이곳은 과사무실이야! 직원분들이 계시네", delegate ()
         {
             Debug.Log("OK Pressed!");
 
+            t.GetComponent<Text>().text = "아하";
             DialogDataAlert gwasa2 = new DialogDataAlert("10층 - 과사", "과사무실에서는 수강지도, 공문, 졸업요건 등\n 여러 행정사항이나 질문을 문의할 수 있어!", delegate ()
             {
                 Debug.Log("OK Pressed!");
 
                 t.GetComponent<Text>().text = "알겠어요!";
-                DialogDataAlert gwasa3 = new DialogDataAlert("10층 - 과사", "정확한 위치는 하이테크 1012호야!\n 전화번호는 032-860-7440(학부)란다", delegate ()
+                DialogDataAlert gwasa3 = new DialogDataAlert("10층 - 과사", "정확한 위치는 하이테크 1012호야!\n전화번호는 032-860-7440(학부)란다", delegate ()
                 {
                     Debug.Log("OK Pressed!");
-
+                    player.GetComponent<playerctr>().enabled = true;
                 });
                 DialogManager.Instance.Push(gwasa3);
 

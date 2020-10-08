@@ -6,25 +6,21 @@ using UnityEngine.UI;
 public class check10f4 : MonoBehaviour
 {
 
-    public GameObject Panel;
+    public GameObject player;
     public Text t;
-    public void hidePanel()
-    {
-        Panel.gameObject.SetActive(true);
-    }
+   
 
     void OnMouseDown()
     {
         Debug.Log("clicked");
-        hidePanel();
-
+        player.GetComponent<playerctr>().enabled = false;
 
         t.GetComponent<Text>().text = "네!";
         DialogDataAlert chang1 = new DialogDataAlert("10층 - 창문", "풍경이 예쁘지?", delegate ()
         {
             Debug.Log("OK Pressed!");
 
-            t.GetComponent<Text>().text = "next";
+            t.GetComponent<Text>().text = "coool!";
             DialogDataAlert chang2 = new DialogDataAlert("10층 - 창문", "이 창문을 통해 후문 전체거리를\n한 눈에 볼 수 있어", delegate ()
             {
                 Debug.Log("OK Pressed!");
@@ -33,6 +29,7 @@ public class check10f4 : MonoBehaviour
                 DialogDataAlert chang3 = new DialogDataAlert("10층 - 창문", "후문에 놀거리가 참 많아!\n나중에 꼭 가봐~", delegate ()
                 {
                     Debug.Log("OK Pressed!");
+                    player.GetComponent<playerctr>().enabled = true;
 
                 });
                 DialogManager.Instance.Push(chang3);

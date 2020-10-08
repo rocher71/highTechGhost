@@ -5488,6 +5488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   t: {fileID: 421907167}
+  player: {fileID: 2063041543}
 --- !u!114 &296623163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13265,6 +13266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   t: {fileID: 421907167}
+  player: {fileID: 2063041543}
 --- !u!4 &737642386
 Transform:
   m_ObjectHideFlags: 0
@@ -18362,6 +18364,7 @@ MonoBehaviour:
   t: {fileID: 421907167}
   cor: {fileID: 1562593297}
   wrong: {fileID: 1195126499}
+  player: {fileID: 2063041543}
 --- !u!65 &938414688
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27353,6 +27356,7 @@ MonoBehaviour:
   t: {fileID: 421907167}
   cor: {fileID: 1562593297}
   wrong: {fileID: 1195126499}
+  player: {fileID: 2063041543}
 --- !u!114 &1396826582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29012,6 +29016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   t: {fileID: 421907167}
+  player: {fileID: 2063041543}
 --- !u!114 &1477489656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29913,6 +29918,7 @@ MonoBehaviour:
   t: {fileID: 421907167}
   cor: {fileID: 1562593297}
   wrong: {fileID: 1195126499}
+  player: {fileID: 2063041543}
 --- !u!65 &1539337841
 BoxCollider:
   m_ObjectHideFlags: 0

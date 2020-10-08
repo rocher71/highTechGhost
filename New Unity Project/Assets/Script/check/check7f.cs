@@ -6,19 +6,17 @@ using UnityEngine.UI;
 public class check7f : MonoBehaviour
 {
 
-    public GameObject Panel;
+    public GameObject player;
     public Text t;
     public Text cor;
     public Text wrong;
-    public void hidePanel()
-    {
-        Panel.gameObject.SetActive(true);
-    }
+ 
 
     void OnMouseDown()
     {
         Debug.Log("clicked");
-        hidePanel();
+      
+        player.GetComponent<playerctr>().enabled = false;
         t.GetComponent<Text>().text = "ㅇ..알겠어요";
         DialogDataAlert alert = new DialogDataAlert("대학원생 김논문(26)", "대학원...오지마........\n살려줘.....", delegate () {
             Debug.Log("OK Pressed!");
@@ -31,8 +29,8 @@ public class check7f : MonoBehaviour
 						Debug.Log("Confirm OK");
 
                         t.GetComponent<Text>().text = "헷!";
-                        DialogDataAlert yes = new DialogDataAlert("대학원생 김논문(!26!)", "정답이야!", delegate () {
-                            
+                        DialogDataAlert yes = new DialogDataAlert("대학원생 김논문(26)", "정답이야!", delegate () {
+                            player.GetComponent<playerctr>().enabled = true;
                             Debug.Log("OK Pressed!");
                         });
                         DialogManager.Instance.Push(yes);
@@ -42,8 +40,8 @@ public class check7f : MonoBehaviour
 						Debug.Log("Confirm Cancel");
 
                         t.GetComponent<Text>().text = "(알게뭐야..)";
-                        DialogDataAlert no = new DialogDataAlert("대학원생 김논문(!26!)", "틀렸어.. 후배님 실망이야", delegate () {
-
+                        DialogDataAlert no = new DialogDataAlert("대학원생 김논문(??)", "틀렸어.. 후배님 실망이야", delegate () {
+                            player.GetComponent<playerctr>().enabled = true;
                             Debug.Log("OK Pressed!");
                         });
                         DialogManager.Instance.Push(no);

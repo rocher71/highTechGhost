@@ -12,12 +12,12 @@ public class quit_15f : MonoBehaviour
     public Text t;
     public Text cor;
     public Text wrong;
-
+    public GameObject player;
 
     void OnMouseDown()
     {
         Debug.Log("clicked");
-
+        player.GetComponent<playerctr>().enabled = false;
         cor.GetComponent<Text>().text = "응!";
         wrong.GetComponent<Text>().text = "아니!";
         DialogDataConfirm confirm = new DialogDataConfirm("안뇽, 인덕", "상담 다 마쳤니?",
@@ -29,7 +29,8 @@ public class quit_15f : MonoBehaviour
                  t.GetComponent<Text>().text = "좋아!";
                  DialogDataAlert yes = new DialogDataAlert("안뇽, 인덕", "그럼 이제 인후가서\n놀자!!", delegate () {
                      Debug.Log("OK Pressed!");
-                     
+                     player.GetComponent<playerctr>().enabled = true;
+
                      SceneManager.LoadScene("endingdialog");
                  });
                  DialogManager.Instance.Push(yes);
@@ -42,7 +43,7 @@ public class quit_15f : MonoBehaviour
                  t.GetComponent<Text>().text = "알겠어";
                  DialogDataAlert no = new DialogDataAlert("안뇽, 인덕", "그럼 나중에 다시 와!", delegate () {
                      Debug.Log("OK Pressed!");
-
+                     player.GetComponent<playerctr>().enabled = true;
                  });
                  DialogManager.Instance.Push(no);
 

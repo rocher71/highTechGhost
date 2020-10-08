@@ -10,12 +10,13 @@ public class check1f4 : MonoBehaviour
     public Text t;
     public Text cor;
     public Text wrong;
-
+    public GameObject player;
 
     void OnMouseDown()
     {
         Debug.Log("clicked");
 
+        player.GetComponent<FirstPlayerController>().enabled = false;
         t.GetComponent<Text>().text = "엉?";
         DialogDataAlert alert = new DialogDataAlert("1층 - ???", "여긴 어디일 것 같아?", delegate () {
             Debug.Log("OK Pressed!");
@@ -55,6 +56,7 @@ public class check1f4 : MonoBehaviour
                                              t.GetComponent<Text>().text = "가자!!";
                                              DialogDataAlert yes7 = new DialogDataAlert("1층 - 여휴", "자 이제 다음 곳으로 가자!", delegate () {
                                                  Debug.Log("OK Pressed!");
+                                                 player.GetComponent<FirstPlayerController>().enabled = true;
                                              });
                                              DialogManager.Instance.Push(yes7);
                                          });
@@ -82,6 +84,7 @@ public class check1f4 : MonoBehaviour
                          t.GetComponent<Text>().text = "으..응";
                          DialogDataAlert yes2 = new DialogDataAlert("1층 - ???", "날 다시 클릭해보라구!", delegate () {
                              Debug.Log("OK Pressed!");
+                             player.GetComponent<FirstPlayerController>().enabled = true;
                          });
                          DialogManager.Instance.Push(yes2);
                      });

@@ -12,12 +12,13 @@ public class up_3f : MonoBehaviour
     public Text t;
     public Text cor;
     public Text wrong;
+    public GameObject player;
 
 
     void OnMouseDown()
     {
         Debug.Log("clicked");
-
+        player.GetComponent<playerctr>().enabled = false;
         cor.GetComponent<Text>().text = "응!";
         wrong.GetComponent<Text>().text = "아니!";
         DialogDataConfirm confirm = new DialogDataConfirm("안뇽, 인덕", "윗 층으로 올라갈래?",
@@ -30,6 +31,7 @@ public class up_3f : MonoBehaviour
                  DialogDataAlert yes = new DialogDataAlert("안뇽, 인덕", "그럼 보내줄게!", delegate () {
                      Debug.Log("OK Pressed!");
                      SceneManager.LoadScene("7f");
+                     player.GetComponent<playerctr>().enabled = true;
                  });
                  DialogManager.Instance.Push(yes);
 
@@ -41,6 +43,7 @@ public class up_3f : MonoBehaviour
                  t.GetComponent<Text>().text = "알겠어";
                  DialogDataAlert no = new DialogDataAlert("안뇽, 인덕", "그럼 나중에 다시 와!", delegate () {
                      Debug.Log("OK Pressed!");
+                     player.GetComponent<playerctr>().enabled = true;
 
                  });
                  DialogManager.Instance.Push(no);

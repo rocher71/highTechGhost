@@ -1377,7 +1377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e04a4e2ad290f6428ce664cf54de3ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 112449702}
+  player: {fileID: 2021647052}
   t: {fileID: 861670628}
 --- !u!1001 &65873583
 PrefabInstance:
@@ -17614,6 +17614,7 @@ MonoBehaviour:
   t: {fileID: 861670628}
   cor: {fileID: 1354677653}
   wrong: {fileID: 1089380048}
+  player: {fileID: 2021647052}
 --- !u!65 &1054050121
 BoxCollider:
   m_ObjectHideFlags: 0

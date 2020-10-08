@@ -6,17 +6,14 @@ using UnityEngine.UI;
 public class check15f2 : MonoBehaviour
 {
 
-    public GameObject Panel;
+    public GameObject player;
     public Text t;
-    public void hidePanel()
-    {
-        Panel.gameObject.SetActive(true);
-    }
+    
 
     void OnMouseDown()
     {
         Debug.Log("clicked");
-        hidePanel();
+        player.GetComponent<playerctr>().enabled = false;
         t.GetComponent<Text>().text = "뭘 하면 돼?";
         DialogDataAlert alert = new DialogDataAlert("15층 - 교수실", "교수님이 널 기다리고 계셔!", delegate () {
             Debug.Log("OK Pressed!");
@@ -36,6 +33,7 @@ public class check15f2 : MonoBehaviour
                     t.GetComponent<Text>().text = "고마워~ 안뇽!";
                     DialogDataAlert three = new DialogDataAlert("15층 - 교수실", "그래 그럼 잘 하고 와!", delegate ()
                     {
+                        player.GetComponent<playerctr>().enabled = true;
                         Debug.Log("OK Pressed!");
 
                     });

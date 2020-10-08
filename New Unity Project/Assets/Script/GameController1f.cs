@@ -7,9 +7,11 @@ using UnityEngine.UI;
 public class GameController1f : MonoBehaviour {
 
     public Text t;
+    public GameObject player;
 
     void talk()
     {
+        player.GetComponent<FirstPlayerController>().enabled = false;
         DialogDataAlert alert = new DialogDataAlert("안뇽, 인덕", "신입생 안녕!! 어서와~", delegate () {
             Debug.Log("OK Pressed!");
 
@@ -24,6 +26,7 @@ public class GameController1f : MonoBehaviour {
                     t.GetComponent<Text>().text = "알겠어!";
                     DialogDataAlert alert4 = new DialogDataAlert("안뇽, 인덕", "앗 그리고 허공에 떠있는\n회전큐브를 클릭해봐!", delegate () {
                         Debug.Log("OK Pressed!");
+                        player.GetComponent<FirstPlayerController>().enabled = true;
 
                     });
                     DialogManager.Instance.Push(alert4);
@@ -38,9 +41,10 @@ public class GameController1f : MonoBehaviour {
     }
 	// Use this for initialization
 	IEnumerator Start () {
-
+        
         yield return new WaitForSeconds(0.05f);
         talk();
+        
     }
 	
 	// Update is called once per frame

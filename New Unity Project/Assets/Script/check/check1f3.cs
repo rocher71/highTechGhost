@@ -8,11 +8,11 @@ public class check1f3 : MonoBehaviour
 
 
     public Text t;
-
+    public GameObject player;
     void OnMouseDown()
     {
         Debug.Log("clicked");
-
+        player.GetComponent<FirstPlayerController>().enabled = false;
         t.GetComponent<Text>().text = "아카?";
         DialogDataAlert alert = new DialogDataAlert("1층 - 아카", "이 안은 아카, 그리고\n바로 문밖은 아카앞이라고 해", delegate () {
             Debug.Log("OK Pressed!");
@@ -40,7 +40,7 @@ public class check1f3 : MonoBehaviour
                                 t.GetComponent<Text>().text = "알겠어";
                                 DialogDataAlert alert7 = new DialogDataAlert("1층 - 아카", "자 이제 다음 장소로 가보자!", delegate () {
                                     Debug.Log("OK Pressed!");
-                                    
+                                    player.GetComponent<FirstPlayerController>().enabled = true;
                                 });
                                 DialogManager.Instance.Push(alert7);
 
