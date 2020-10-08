@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/15f_dialog.unity
     guid: d2a22e99e982f6741944caf00a9063db
+  - enabled: 1
+    path: Assets/Scenes/endingdialog.unity
+    guid: 66c79f982f3e5d14c8ce7da9a674d735
   m_configObjects: {}

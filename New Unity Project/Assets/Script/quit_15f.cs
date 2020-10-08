@@ -29,12 +29,8 @@ public class quit_15f : MonoBehaviour
                  t.GetComponent<Text>().text = "좋아!";
                  DialogDataAlert yes = new DialogDataAlert("안뇽, 인덕", "그럼 이제 인후가서\n놀자!!", delegate () {
                      Debug.Log("OK Pressed!");
-#if UNITY_EDITOR
-                     UnityEditor.EditorApplication.isPlaying = false;
-#else
-                      Application.Quit();
-#endif
-                     Application.Quit();
+                     
+                     SceneManager.LoadScene("endingdialog");
                  });
                  DialogManager.Instance.Push(yes);
 
