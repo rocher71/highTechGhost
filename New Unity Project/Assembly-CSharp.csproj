@@ -82,6 +82,7 @@
      <Compile Include="Assets\Script\check\check3f.cs" />
      <Compile Include="Assets\Script\check\check7f.cs" />
      <Compile Include="Assets\Script\check\check7f2.cs" />
+     <Compile Include="Assets\Script\check\checkending.cs" />
      <Compile Include="Assets\Script\playerctr.cs" />
      <Compile Include="Assets\Script\quit_15f.cs" />
      <Compile Include="Assets\Script\up.cs" />
