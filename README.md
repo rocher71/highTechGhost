@@ -1,2 +1,12 @@
-# highTechGhost
-We are ghost
+# 놀러와요 인하텍!
+
+<br>
+:hatched_chick: '놀러와요 인하텍'은 수험생, 새내기, 학부모님들을 위해 인하대학교의 하이테크관을 소개시켜주는 게임입니다.
+
+### 1층 전경
+![ㅇㄹㄹㅇㄴㄹ](https://user-images.githubusercontent.com/68051794/140641478-f95b898b-ca30-48c7-954f-ab3b546cc879.png)
+![120](https://user-images.githubusercontent.com/68051794/140640998-19ed0f9f-11ee-4476-b15d-7fd8dcc55ee8.PNG)
+
+
+### 외관
+![ㅇㅇㄹㅇ](https://user-images.githubusercontent.com/68051794/140641498-a2d6482d-1496-49c8-9430-9edaa22bcd25.png)
