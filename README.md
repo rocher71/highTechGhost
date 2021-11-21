@@ -10,3 +10,4 @@
 
 ### 외관
 ![ㅇㅇㄹㅇ](https://user-images.githubusercontent.com/68051794/140641498-a2d6482d-1496-49c8-9430-9edaa22bcd25.png)
+-하이테크관 건물의 외관
